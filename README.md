@@ -132,6 +132,12 @@ Baseado na ideia de facilitar a crição de apis do absoluto, este projeto é um
   docker-compose up
 ```
 
+## Acessando Swagger
+### API
+    http://127.0.0.1:8000/docs#/
+### PgAdmin
+    http://127.0.0.1:5050/login?next=/
+
 
 ## Autores
 - [@Rodrigo_Kelven](https://github.com/Rodrigo-Kelven)
