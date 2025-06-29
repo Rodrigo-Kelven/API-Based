@@ -12,6 +12,7 @@ services:
       - redis-data:/data
     restart: unless-stopped  # Garantir que o container reinicie automaticamente se falhar
 
+
   db:
     image: postgres:17
     container_name: my-db # nome do container do banco
@@ -36,7 +37,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
-      - "8080:80"
+      - "5050:80"
     depends_on:
       - db
     restart: unless-stopped  # Garantir que o container reinicie automaticamente se falhar
