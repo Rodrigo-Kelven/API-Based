@@ -2,17 +2,17 @@ from fastapi import APIRouter
 from enum import Enum
 
 from routes.routes import route_based
-from payment.routes import apiPayment
+
 
 # preximo da api geral
 class PrefixRouter(Enum):
     api = "/api/v1"
-    paymente = "/api/vi/payment"
+
 
 # tags da api home
 class Tags(Enum):
     home = "Home"
-    paymente = "API Payment"
+
 
 
 routes_all = APIRouter()
@@ -20,7 +20,7 @@ routes_all = APIRouter()
 # funcao centralizadora de rotas
 def all_Rotes(app):
     app.include_router(route_based, prefix=PrefixRouter.api.value, tags=[Tags.home])
-    app.include_router(apiPayment, prefix=PrefixRouter.paymente.value, tags=[Tags.paymente])
+
 
 
 # atalho
