@@ -12,7 +12,7 @@ engine_auth = create_async_engine(
     echo=True,
     pool_size=20,  # Tamanho do pool de conexões
     max_overflow=0,  # Conexões adicionais permitidas
-    pool_pre_ping=True, # Verifica se a conexão está ativa antes de se conectar
+    pool_pre_ping=True, # Verificando conexão do banco
 )
 
 # Criação do gerenciador de sessões assíncronas
